@@ -1,9 +1,10 @@
 import './App.css';
+import Job from './components/job/job';
 
 function App() {
   return (
     <div className="App">
-      <h1>Començando o projeto</h1>
+      <Job />
     </div>
   );
 }

@@ -1,0 +1,31 @@
+.container {
+    margin: auto auto;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    border:  1px solid blue;
+}
+
+.profile img {
+    margin-right: 10px;
+}
+
+.vacancy-details span {
+    margin-right: 15px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+    width: 89%;
+    margin: auto auto;
+}
+
+.languages ul li {
+    list-style-type: none;
+    margin-right: 5px;
+}

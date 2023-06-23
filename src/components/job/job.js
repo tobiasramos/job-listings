@@ -11,7 +11,9 @@ const Job = () => {
                         <img src={job.logo} />
 
                         <div className='user-details'>
-                            <span>{job.company}</span> <br></br>
+                            <span>{job.company}</span>
+                            <span>{job.new}</span>
+                            <span>{job.featured}</span><br></br>
                             <span>{job.position}</span>
                             <div className='vacancy-details'>
                                 <span>{job.postedAt}</span>
@@ -25,7 +27,9 @@ const Job = () => {
 
                         <ul>
                             <li>
-                              {job.role} {job.level} {job.languages}
+                                <span> {job.role}</span>
+                                <span>{job.level}</span>
+                                <span>{job.languages.join(" ")}</span>
                             </li>
                         </ul>
 

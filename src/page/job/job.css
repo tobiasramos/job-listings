@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: hsl(180, 31%, 95%);
+    background-color: hsl(180, 52%, 96%);
 }
 
 .profile {
@@ -16,7 +16,31 @@
     margin-right: 10px;
 }
 
+.company-details {
+    padding: 5px;
+}
+
+.company-details span {
+    margin-bottom: 15px;
+}
+
+.company-details .company {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.company-details .position {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.company-details .position:hover {
+    color: var(--text-color);
+    transition: 0.5s;
+}
+
 .vacancy-details span {
+    color: hsl(180, 8%, 52%);
     margin-right: 15px;
 }
 
@@ -35,8 +59,19 @@
     list-style-type: none;
     margin-right: 10px;
 }
+
 .languages ul li span {
+    cursor: pointer;
     margin-right: 15px;
-    color: hsl(180, 14%, 20%);
+    padding: 6px;
+    font-weight: 700;
+    color: var(--text-color);
+    border-radius: 10px;
     background-color: hsl(180, 31%, 95%);
+}
+
+.languages ul li span:hover {
+    color: #fff;
+    background-color: var(--text-color);
+    transition: 0.5s;
 }

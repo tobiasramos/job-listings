@@ -25,10 +25,10 @@ const Job = () => {
                         <img src={job.logo} alt={`Logo da ${job.company}`} />
 
                         <div className='company-details'>
-                            <span>{job.company}</span>
+                            <span className='company'>{job.company}</span>
                             <span>{job.new}</span>
                             <span>{job.featured}</span><br></br>
-                            <span>{job.position}</span>
+                            <span className='position'>{job.position}</span>
                             <div className='vacancy-details'>
                                 <span>{job.postedAt}</span>
                                 <span>{job.contract}</span>

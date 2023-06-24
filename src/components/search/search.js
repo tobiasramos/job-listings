@@ -13,7 +13,7 @@ const Search = ({ handleSearch }) => {
 
     return (
         <div className="search-container">
-            <input type='text' value={searchLanguages} onChange={handleChange} placeholder="Pesquese por linguagens" />
+            <input type='text' value={searchLanguages} onChange={handleChange} placeholder="Pesquise por linguagens ou posição..." />
         </div>
     )
 }

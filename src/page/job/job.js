@@ -4,7 +4,6 @@ import './job.css'
 import Search from '../../components/search/search';
 
 const Job = () => {
-
     const [searchResults, setSearchResults] = useState(data)
 
     const handleSearch = (searchLanguages) => {
@@ -14,7 +13,6 @@ const Job = () => {
         );
         setSearchResults(results);
     };
-
 
     return (
         <div className='container'>

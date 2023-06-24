@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import data from '../../data/data.json'
 import './job.css'
 import Search from '../../components/search/search';
+
 const Job = () => {
+
+    const [searchResults, setSearchResults] = useState(data)
+
+    const handleSearch = (searchLanguages) => {
+        const results = data.filter((job) =>
+            job.position.toLowerCase().includes(searchLanguages.toLowerCase()) ||
+            job.languages.join(" ").toLowerCase().includes(searchLanguages.toLowerCase())
+        );
+        setSearchResults(results);
+    };
+
 
     return (
         <div className='container'>
-            <Search />
-            {data.map((job) => (
+            <Search handleSearch={handleSearch} />
+            {searchResults.map((job) => (
                 <div key={job.id} className='card'>
                     <div className='profile'>
                         <img src={job.logo} alt={`Logo da ${job.company}`} />

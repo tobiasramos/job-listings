@@ -1,4 +1,4 @@
-.container {
+.job-container {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,16 @@
     background-color: #fff;
 }
 
+.row {
+    display: none;
+    margin-top: 15px;
+    width: 80%;
+    border: 1px solid hsl(180, 8%, 52%);
+}
+
 .languages ul li {
+    display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin-right: 10px;
 }
@@ -74,4 +83,23 @@
     color: #fff;
     background-color: var(--text-color);
     transition: 0.5s;
+}
+
+@media (max-width: 760px) {
+    .card {
+        display: block;
+        height: auto;
+    }
+
+    .profile {
+        display: block;
+    }
+
+    .profile img {
+        width: 60px;
+    }
+
+    .row {
+        display: block;
+    }
 }

@@ -15,7 +15,7 @@ const Job = () => {
     };
 
     return (
-        <div className='container'>
+        <div className='job-container'>
             <Search handleSearch={handleSearch} />
             {searchResults.map((job) => (
                 <div key={job.id} className='card'>
@@ -34,9 +34,8 @@ const Job = () => {
                             </div>
                         </div>
                     </div>
-
+                    <div className="row"></div>
                     <div className='languages'>
-
                         <ul>
                             <li>
                                 <span> {job.role}</span>
@@ -44,7 +43,6 @@ const Job = () => {
                                 <span>{job.languages.join(" ")}</span>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             ))}

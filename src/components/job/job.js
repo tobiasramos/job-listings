@@ -1,4 +1,5 @@
-import data from '../data/data.json'
+import React from 'react';
+import data from '../../data/data.json'
 import './job.css'
 const Job = () => {
 
@@ -6,10 +7,9 @@ const Job = () => {
         <div className='container'>
             {data.map((job) => (
                 <div key={job.id} className='card'>
-
                     <div className='profile'>
-                        <img src={job.logo} />
-
+                        <img src={job.logo} alt={`Logo da ${job.company}`}/>
+                        
                         <div className='user-details'>
                             <span>{job.company}</span>
                             <span>{job.new}</span>

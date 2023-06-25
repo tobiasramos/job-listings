@@ -23,10 +23,14 @@ const Job = () => {
                         <img src={job.logo} alt={`Logo da ${job.company}`} />
 
                         <div className='company-details'>
-                            <span className='company'>{job.company}</span>
-                            <span>{job.new}</span>
-                            <span>{job.featured}</span><br></br>
+                            <div>
+                                <span className='company'>{job.company}</span>
+                                <span className='new'>{job.new && <span>New</span>}</span>
+                                <span className='featured'>{job.featured && <span>Featured</span>}</span>
+                            </div>
+
                             <span className='position'>{job.position}</span>
+                            
                             <div className='vacancy-details'>
                                 <span>{job.postedAt}</span>
                                 <span>{job.contract}</span>
